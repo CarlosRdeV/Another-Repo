@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aplicación de Calculadora';
-  op1: number;
-  op2: number;
-  suma: number;
+  suma:number;
+  onSumaRealizada(suma: number){
+    this.suma=suma;
+  } 
 
-  onSumar(): void {
-    this.suma = this.op1 + this.op2;
-  }
+
+ 
 }
