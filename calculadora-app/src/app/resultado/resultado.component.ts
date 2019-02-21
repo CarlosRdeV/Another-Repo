@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ResultadoComponent implements OnInit {
 
   @Input() suma: number;
-    
-    
+
+
   constructor() { }
 
   ngOnInit() {

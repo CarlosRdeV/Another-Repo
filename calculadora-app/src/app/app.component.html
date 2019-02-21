@@ -1,9 +1,5 @@
 <div class="container">
   <h1>{{title}}</h1>
-  <app-formulario 
-  (sumaRealizada)="onSumaRealizada($event)"
-  ></app-formulario>
-  <app-resultado
-  [suma]="suma"
-  ></app-resultado>
+  <app-formulario (sumaRealizada)="onSumaRealizada($event)"></app-formulario>
+  <app-resultado [suma]="suma"></app-resultado>
 </div>

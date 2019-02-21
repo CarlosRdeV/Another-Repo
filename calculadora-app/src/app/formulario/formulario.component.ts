@@ -10,15 +10,15 @@ export class FormularioComponent implements OnInit {
   op1: number;
   op2: number;
   suma: number;
-  
+
   constructor() { }
 
   ngOnInit() {
   }
 
   onSumar(): void {
-    this.suma=this.op1+this.op2;
-    this.sumaRealizada.emit(this.suma);  
+    this.suma = this.op1 + this.op2;
+    this.sumaRealizada.emit(this.suma);
   }
 
 }
