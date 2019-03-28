@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ResultadoComponent implements OnInit {
 
-  @Input() suma: number;
+  @Input() resultadoOperacion: number;
 
 
   constructor() { }

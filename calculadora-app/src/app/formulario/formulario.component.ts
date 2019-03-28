@@ -7,9 +7,9 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
   @Output() sumaRealizada = new EventEmitter<number>();
-  op1: number;
-  op2: number;
-  suma: number;
+  inputOperator1: number;
+  inputOperator2: number;
+  resultadoOperacion: number;
 
   constructor() { }
 
@@ -17,8 +17,8 @@ export class FormularioComponent implements OnInit {
   }
 
   onSumar(): void {
-    this.suma = this.op1 + this.op2;
-    this.sumaRealizada.emit(this.suma);
+    this.resultadoOperacion = this.inputOperator1 + this.inputOperator2;
+    this.sumaRealizada.emit(this.resultadoOperacion);
   }
 
 }

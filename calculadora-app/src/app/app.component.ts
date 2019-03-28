@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class AppComponent {
   
   title = 'Aplicación de Calculadora';
-  suma: number;
+  resultadoOperacion: number;
 
-  onSumaRealizada(suma: number) {
-    this.suma = suma;
+  onSumaRealizada(resultadoOperacion: number) {
+    this.resultadoOperacion = resultadoOperacion;
   }
 
 
